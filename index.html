@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="auto()">
+    <iframe id="video" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <script>
+        
+
+
+function auto(){
+    let list = ["https://www.youtube.com/embed/B2Jj5A32Tp0","https://www.youtube.com/embed/YU-d7fVgGtY" , "https://www.youtube.com/embed/_7NFxOYh84o","https://www.youtube.com/embed/CIVlTBu1vpw","https://www.youtube.com/embed/GOLcuJNbZ0o"]
+ let video = list[Math.floor(Math.random()*list.length)];
+ let videoposter = document.getElementById("video"); 
+ videoposter.setAttribute("src",video);
+}
+
+    </script>
+</body>
+</html>
